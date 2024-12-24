@@ -1,0 +1,27 @@
+.circle {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Adjust the size as needed */
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray; /* Circle background color */
+  }
+  
+  .circle-image {
+    width: 200px; /* Set larger than the circle */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .plant-card:hover .plant-image {
+    transform: scale(1.5); /* Enlarge image to 1.2x its size */
+  }
+  
+  .plant-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the entire card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow for effect */
+  }
+  /* Add this in your CSS file or in a <style> tag in your component */
+.plant-image:hover {
+  transform: scale(1.6); /* Scale the image by 1.2 times */
+}

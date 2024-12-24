@@ -1,0 +1,129 @@
+/* General Container Styling */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #9bceba, #6a9c97);  /* Gradient background */
+  padding: 20px;
+  position: relative; /* Ensure positioning is relative to this container */
+}
+
+/* Form Section - Increased Size */
+.form-section {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 60px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px; /* Increased width */
+  text-align: center;
+  position: relative; /* Positioning context for the image */
+}
+
+/* Image Section */
+.image-section {
+  position: absolute;
+  top: 10px; /* Adjust distance from the top */
+  right: 10px; /* Adjust distance from the right */
+  width: 180px; /* Adjust the size of the image */
+  height: 180px; /* Adjust the size of the image */
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* Form Heading */
+.centered-heading {
+  font-size: 32px;  /* Larger heading */
+  color: #333;
+  margin-bottom: 40px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 25px;  /* Increased spacing */
+}
+
+label {
+  display: block;
+  font-size: 16px;  /* Larger font size */
+  color: #444;
+  margin-bottom: 10px;
+}
+
+input.form-control {
+  width: 100%;
+  padding: 16px;  /* Increased padding */
+  font-size: 18px;  /* Larger font size */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  transition: all 0.3s ease;
+}
+
+input.form-control:focus {
+  border-color: #9bceba;
+  outline: none;
+  background-color: #fff;
+}
+
+.error-text {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Submit Button Styling */
+.submit-section {
+  margin-top: 30px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 18px;  /* Increased padding */
+  background-color: #9bceba;
+  color: white;
+  border: none;
+  font-size: 20px;  /* Larger font size */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.login-button:hover:not(:disabled) {
+  background-color: #78bda8;
+}
+
+/* Error Message Styling */
+.error-text {
+  color: #e74c3c;
+  font-size: 14px;
+}
+
+/* Link Section */
+.links-section {
+  margin-top: 30px;
+}
+
+.signup-text {
+  font-size: 16px;  /* Larger font size */
+}
+
+.signup-text a {
+  color: #9bceba;
+  text-decoration: none;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,116 @@
+/* Overall container with Flexbox */
+.register-container {
+    display: flex;
+    height: 700px;
+    background-color: white;
+    max-width: 1200px; /* Set max width for the page */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  /* Left Section - Registration Form Styling */
+  .form-section {
+    flex: 1; /* This makes the form section take up equal space */
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;  /* Increase the width of the form section */
+  }
+  
+  h2 {
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .register-form {
+    width: 100%;
+    max-width: 600px; /* Increase the max-width for the form */
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  input.form-control {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 8px;
+  }
+  
+  .error-text {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #7db19c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #8be9c3;
+  }
+  
+  .links-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Right Section - Image with Green Background */
+  .image-section {
+    flex: 1.5; /* This section takes up more space than the form section */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    position: relative; /* Set relative positioning for the parent container */
+  }
+  
+  /* Text overlay within the image section */
+  .text-overlay {
+    position: absolute; /* Absolute positioning inside the image section */
+    top: 20px; /* Adjust the vertical position */
+    left: 50%; /* Centers the text horizontally */
+    transform: translateX(-50%); /* Center the text properly */
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 10;
+    text-align: center;
+  }
+  
+  
+  
+  /* Ensuring the image stays within the circular frame */
+  .plant-image {
+    width: 700%; /* Ensure the image fills the width of the frame */
+    height: 700%; /* Ensure the image fills the height of the frame */
+    object-fit: cover; /* Ensures the image is properly cropped to fit the circle */
+    border-radius: 20%; /* Ensures the image itself is circular */
+  }
+  
+  /* Mobile Responsive Styling */
+  @media (max-width: 768px) {
+    .register-container {
+      flex-direction: column;
+      max-width: 100%;
+    }
+  }
+  
